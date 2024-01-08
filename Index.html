@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Random Quote Machine</title>
+        <!--The width=device-width part sets the width of the page to follow the screen-width of the device (which will vary depending on the device).
+
+The initial-scale=1 part sets the initial zoom level when the page is first loaded by the browser.
+-->
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./styles.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+        <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"> -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="./app.js"></script>
+
+        <script> window.onload = () => {
+            getQuote(document);
+           // getColor(document);
+            updateDoc(document);
+
+            
+            } </script>
+    </head>
+
+<body>
+    <main>
+      <div class="small-div">
+        
+        <div class="dyn-bgcolor" id="quote-box">
+          <blockquote>
+            <div class="container">
+                <div class="row">
+                    <!-- <div class="col-xs-12"></div>
+                    -->
+                    
+
+                    <div class="col-xs-3"></div>
+                    <div class="quote-col col-xs-6">
+                    <div class="quote-icon dyn-color">
+                        <i class="fa fa-quote-left"></i>
+                        
+                    </div>
+                        <h1 class="quote dyn-color" id="text">
+                        </h1>
+                    </div>
+                    <div class="col-xs-3"></div>
+                </div>
+
+                <div class="row"></div>
+                    <div class="col-xs-2">
+                        <a href="https://twitter.com/intent/tweet" id="tweet-quote" class="fa fa-twitter dyn-color" target="_blank">
+                            <i ></i>
+                        </a>
+                    </div>
+                    <div class="col-xs-8">
+                        <p class="quote dyn-color" id="author"> </p>
+                    </div>
+                    <div class="col-xs-2">
+                        <button type="button" class="btn btn-default dyn-color" id="new-quote" onClick='
+                                                                                                        
+                        getQuote(document);
+
+                        updateDoc(document);
+
+                        
+                        '>Next Quote</button>
+                    </div>
+                
+                </div>
+                
+            
+            </div>
+          </blockquote>
+          </div>
+      </div>
+    </main>
+</body>
+</html>
